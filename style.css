@@ -1,0 +1,90 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(66, 66, 66, 0.7)),
+        url('/images/fondo.png') center top/cover no-repeat;
+    font-family: monospace;
+    color: aliceblue;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos de los encabezados y párrafos */
+h1 {
+    color: green;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    max-width: 800px; /* Limita el ancho del texto para que no sea demasiado largo en pantallas grandes */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 30%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 50%, black 25%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 25%, transparent);
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  min-height: 48px;
+  background: green;
+  color: black;
+  border: 3px solid black;
+  border-radius: 0;
+  margin: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  gap: 8px;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  background: black;
+  color: green;
+  border-color: green;
+}
+
+.contenido {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0));
+    border-radius: 16px;
+}
+
+
+
+.wing {
+  transition: transform 2s ease;
+}
+
+.bird:hover .wing {
+  transform: translateY(3px);
+}
+
