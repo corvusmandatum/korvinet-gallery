@@ -2,7 +2,7 @@
 body {
     background: 
         linear-gradient(rgba(0,0,0,0.7), rgba(66, 66, 66, 0.7)),
-        url('/images/fondo.png') center top/cover no-repeat;
+        url('images/fondo.png') center top/cover no-repeat;
     font-family: monospace;
     color: aliceblue;
     margin: 0;
