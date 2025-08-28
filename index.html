@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>David Lule</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Korvinet</title>
 </head>
+
 <body>
-    <div class="contenido">
-        <h1>Korvinet</h1>
-        
-        
-        <p>
-          En Korvinet, potenciamos su marca y expandimos su presencia en el mundo digital.
-        </p>
-        <p>
-            Ofrecemos soluciones web integrales para empresas y profesionales, caracterizadas por nuestra comunicación transparente, flexible y orientada a resultados.
-        </p>
-        <p>
-            Proyecte la imagen de éxito y profesionalismo que su negocio merece con nuestras soluciones de vanguardia.
-          </p>
-          <button name="catálogo" type="button">
-            catálogo
-          </button>
-          <button name="contacto" type="button">
-            contacto
-          </button>
+  <header>
+    <img src="images/korvinet-logo-bn.png" alt="Korvinet Logo" class="logo">
+  </header>
+  <div id="contenido-principal" class="contenido">
+    <h1>Korvinet</h1>
+    <p>
+      Potenciamos su marca y expandimos su presencia en el mundo digital.
+    </p>
+    <p>
+      Soluciones web integrales con una comunicación
+      transparente, flexible y orientada a resultados.
+    </p>
+    <p>
+      Proyecte su imagen profesional con soluciones de vanguardia.
+    </p>
+    <button id="btn-galeria" type="button">
+      Galería
+    </button>
+    <button class="btn-contacto" type="button">
+      Contacto
+    </button>
+  </div>
+  <div id="galeria-servicios" class="contenido hidden">
+    <h2>Galería de servicios</h2>
+    <div class="servicios-lista">
+      <div class="servicio">Tienda en línea</div>
+      <div class="servicio">Servicios de videovigilancia</div>
+      <div class="servicio">Inventarios y catálogos</div>
+      <div class="servicio">Propuestas de servicios</div>
+      <div class="servicio">Sitios oficiales</div>
+      <div class="servicio">Eventos y actos sociales</div>
     </div>
-    
+    <button id="btn-volver" type="button">
+      Volver
+    </button>
+    <button class="btn-contacto" type="button">
+      Contacto
+    </button>
+  </div>
+  <div id="formulario-contacto" class="contenido hidden">
+    <h2>Contacto</h2>
+    <p>Atenderemos hoy mismo su mensaje</p>
+    <form id="contact-form">
+      <label for="telefono">Número telefónico:</label>
+      <input type="tel" id="telefono" name="telefono" required maxlength="20">
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <button id="btn-volver-contacto" type="button">Volver</button>
+    <div id="contacto-resultado"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
-
-
-<!--
- - catálogo
- 	-5 proyectos diversos
- 		-Tienda de abarrotes
- 		-Servicios de videovigilancia
- 		-Librería
- 		-Servicios para fiestas
- 		-Productos de oficina
- 		-Plantas y macetas
- - contacto
- 	-teléfono
- 	-email
- 	-webpage
- 	-->
